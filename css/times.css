@@ -1,65 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Glegoo:700|Montserrat:200i,400,500');
+
+
+/*
+    USE A SCALE [ AVAILIBLE AT TRY-SCALE.COM]
+    https://prof3ssorst3v3.github.io/mad9013/assignments/#fonts-colours-and-layout
+    medium start size 900px width
+*/
 *,
 *::after,
 *::before{
+    
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 html{
-    font-size: 16px;
-    line-height: 1.6;
+
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: Montserrat, sans-serif;
     /*font-family: font stack required for body text */
 }
 h1, h2, h3, h4{
+    font-size: 1.728em ;  
+    font-family: Glegoo, Georgia, serif;
     /*font-family: font stack required for headings */
+    display:flex;
+    justify-content: space-around;
 }
 p{
-    
+    padding:0 10px 10px;
 }
 .container{
-    
+    background-color:hsl(183deg,73%,78%);
+    display:flex;
+    flex-direction: column;
+    max-width:  1500px;
+    padding: 1rem;
+    border: 1rem;
+    margin:auto;
 }
 .subnav{
-    
+    padding: 0px 10px;
+    background-color:hsl(165deg, 50%, 60%);
+    display: flex;
+    justify-content: space-between;
 }
 .subnav a{
-    
+    font-size: 0.75em;
+    color: hsl(165deg, 0%, 0%);
+    text-decoration: none!important;
+}
+.subnav a:hover{
+    text-decoration: underline!important;
 }
 .mainnav{
-    
+    border:7px solid;
+    border-color: hsl(165deg,100%,23%);
+    background-color: hsl(165deg, 50%, 60%);
+    display: flex;
+    justify-content: space-around;
 }
 .mainnav a{
-    
+    font-weight: 500;
+    font-size: 1.333em;
+    color:hsl(165deg, 0%, 0%);
+    text-shadow: 1px 1px 1px hsl(165deg,95%,23%);
+    text-decoration: none!important;
+}
+.mainnav a:hover{
+    text-decoration: underline!important;
 }
 .masthead{
-    
+    display:grid;
+    grid-template-columns: 1fr1 1fr 1fr;
+    /*
+    display:flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+*/
 }
 .times-logo{
-    
+    max-width: 500px;
 }
 .masthead h1{
-    
+/*    border: 1px solid black;        *****/
+    font-size: 3.157em;
+    text-shadow: 3px 2px 5px hsl(165deg,98%,16%);
+    grid-column: 2 /span 3;
 }
 .content{
-    
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
 }
 .content .story{
-    
-}
+    text-indent: 2em;
+    background-color:hsl(165deg,34%,94%);
+        }
 .story.lead-story{
-    
+    grid-column: 1 / span 2;
 }
 h1.story-title{
-    
+    font-size:2.369em;
 }
 .story img{
-    
+    float:right;
 }
 .story p{
-    
+    font-size:0.75em;
 }
 .story blockquote{
-    quotes: "\201E" "\201D";
+    font-weight:500;
+    text-decoration: underline;
+    padding: 0 30px;
+/*    padding: 0 10px;*/
+    quotes: "\201C" "\201D";
+    
 }
 .story blockquote::before{
     content: open-quote;
@@ -68,16 +125,22 @@ h1.story-title{
     content: close-quote;
 }
 .story p.byline{
-    
+    text-align: right;
 }
 p.byline span.author{
-    
+    font-size: 1em;
+    font-weight: 500; 
+    text-decoration: underline
 }
 p.byline span.pub{
-    
+    font-size:0.75em;
+    font-weight: 200;
+    font-style: italic;
 }
 .foot{
-    
+    display:flex;
+    font-size:0.694em;
+    justify-content: space-around;
 }
 .foot p{
     
