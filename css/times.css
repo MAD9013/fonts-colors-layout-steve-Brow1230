@@ -145,3 +145,32 @@ p.byline span.pub{
 .foot p{
     
 }
+
+@media (max-width: 650px) {
+    
+    .container{
+        max-width: 700px;
+    }
+    .story p{
+        font-size: 100%; 
+    }
+    .subnav a{
+    }
+    .mainnav{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+         
+    }
+    .mainnav a{
+        
+    }
+    .masthead{
+        display:flex;
+        flex-direction: column;
+    }
+    .masthead h1{
+        
+    }
+    
+}
