@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Glegoo:700|Montserrat:200i,400,500');
+/*************************************************************
+***********FONT TYPE SCALES (FOR DIFFERENT QUERIES)***********
+****   x Default is 1.333 Perfect Thirds
+****   x Media Querie SMALL   MINOR THIRD 1.200          
+****   x Media querie MEDIUM
+****   X DEFAULTS
+****   x Media Querie LARGE
+*************************************************************/
 
 
 /*
@@ -152,7 +160,7 @@ p.byline span.pub{
         max-width: 700px;
     }
     .story p{
-        font-size: 100%; 
+        font-size: 0.833em; 
     }
     .subnav a{
     }
@@ -163,14 +171,24 @@ p.byline span.pub{
          
     }
     .mainnav a{
-        
+        font-size:1.2em;
     }
     .masthead{
         display:flex;
         flex-direction: column;
     }
     .masthead h1{
+        font-size:2.074em;
+    }
+    .content{
+        margin:auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
         
     }
-    
+    .story img{
+        max-width: 250px;
+        margin:auto; 
+    }
 }
