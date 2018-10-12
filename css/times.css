@@ -40,7 +40,7 @@ p{
     padding:0 10px 10px;
 }
 .container{
-    background-color:hsl(183deg,73%,78%);
+    background-color:hsl(40deg,40%,80%);
     display:flex;
     flex-direction: column;
     max-width:  1500px;
@@ -50,30 +50,30 @@ p{
 }
 .subnav{
     padding: 0px 10px;
-    background-color:hsl(165deg, 50%, 60%);
+    background-color:hsl(212deg, 97%, 80%);
     display: flex;
-    justify-content: space-between;
+    flex-direction: row-reverse;
 }
 .subnav a{
     font-size: 0.75em;
-    color: hsl(165deg, 0%, 0%);
-    text-decoration: none!important;
+    padding-right: 7px;
+    color: hsl(212deg, 0%, 0%);
+    text-decoration: none;
 }
 .subnav a:hover{
     text-decoration: underline!important;
 }
 .mainnav{
     border:7px solid;
-    border-color: hsl(165deg,100%,23%);
-    background-color: hsl(165deg, 50%, 60%);
+    border-color: hsl(212deg,100%,23%);
+    background-color: hsl(212deg, 50%, 60%);
     display: flex;
     justify-content: space-around;
 }
 .mainnav a{
     font-weight: 500;
     font-size: 1.333em;
-    color:hsl(165deg, 0%, 0%);
-    text-shadow: 1px 1px 1px hsl(165deg,95%,23%);
+    color:hsl(212deg, 0%, 0%);
     text-decoration: none!important;
 }
 .mainnav a:hover{
@@ -89,12 +89,11 @@ p{
 */
 }
 .times-logo{
-    max-width: 500px;
+    max-width: 500px
 }
 .masthead h1{
-/*    border: 1px solid black;        *****/
     font-size: 3.157em;
-    text-shadow: 3px 2px 5px hsl(165deg,98%,16%);
+    text-shadow: 3px 2px 5px hsl(212deg,98%,16%);
     grid-column: 2 /span 3;
 }
 .content{
@@ -104,7 +103,7 @@ p{
 }
 .content .story{
     text-indent: 2em;
-    background-color:hsl(165deg,34%,94%);
+    background-color:hsl(212deg,54%,94%);
         }
 .story.lead-story{
     grid-column: 1 / span 2;
@@ -114,6 +113,7 @@ h1.story-title{
 }
 .story img{
     float:right;
+    padding-bottom: 10px;
 }
 .story p{
     font-size:0.75em;
@@ -162,8 +162,7 @@ p.byline span.pub{
     .story p{
         font-size: 0.833em; 
     }
-    .subnav a{
-    }
+    .subnav a{  }
     .mainnav{
         display:flex;
         flex-direction: column;
@@ -188,7 +187,8 @@ p.byline span.pub{
         
     }
     .story img{
-        max-width: 250px;
+        display: block;
+        max-width:250px;
         margin:auto; 
     }
 }
