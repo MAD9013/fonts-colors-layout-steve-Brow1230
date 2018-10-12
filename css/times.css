@@ -1,194 +1,213 @@
 @import url('https://fonts.googleapis.com/css?family=Glegoo:700|Montserrat:200i,400,500');
-/*************************************************************
-***********FONT TYPE SCALES (FOR DIFFERENT QUERIES)***********
-****   x Default is 1.333 Perfect Thirds
-****   x Media Querie SMALL   MINOR THIRD 1.200          
-****   x Media querie MEDIUM
-****   X DEFAULTS
-****   x Media Querie LARGE
-*************************************************************/
 
-
-/*
-    USE A SCALE [ AVAILIBLE AT TRY-SCALE.COM]
-    https://prof3ssorst3v3.github.io/mad9013/assignments/#fonts-colours-and-layout
-    medium start size 900px width
-*/
 *,
 *::after,
-*::before{
-    
+*::before {
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
 
     font-size: 20px;
     line-height: 1.5;
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat, Calibri, sans-serif;
     /*font-family: font stack required for body text */
 }
-h1, h2, h3, h4{
-    font-size: 1.728em ;  
+
+h1,
+h2,
+h3,
+h4 {
+    font-size: 1.728em;
     font-family: Glegoo, Georgia, serif;
     /*font-family: font stack required for headings */
-    display:flex;
+    display: flex;
     justify-content: space-around;
 }
-p{
-    padding:0 10px 10px;
+
+p {
+    padding: 0 10px 10px;
 }
-.container{
-    background-color:hsl(40deg,40%,80%);
-    display:flex;
+
+.container {
+    background-color: hsl(39deg, 60%, 90%);
+    display: flex;
     flex-direction: column;
-    max-width:  1500px;
+    max-width: 1500px;
     padding: 1rem;
     border: 1rem;
-    margin:auto;
+    margin: auto;
 }
-.subnav{
+
+.subnav {
     padding: 0px 10px;
-    background-color:hsl(212deg, 97%, 80%);
+    background-color: hsl(212deg, 97%, 80%);
     display: flex;
     flex-direction: row-reverse;
 }
-.subnav a{
+
+.subnav a {
     font-size: 0.75em;
     padding-right: 7px;
     color: hsl(212deg, 0%, 0%);
     text-decoration: none;
 }
-.subnav a:hover{
-    text-decoration: underline!important;
+
+.subnav a:hover {
+    text-decoration: underline !important;
 }
-.mainnav{
-    border:7px solid;
-    border-color: hsl(212deg,100%,23%);
+
+.mainnav {
+    border: 7px solid;
+    border-color: hsl(212deg, 100%, 23%);
     background-color: hsl(212deg, 50%, 60%);
     display: flex;
     justify-content: space-around;
+    margin-bottom: 15px;
 }
-.mainnav a{
+
+.mainnav a {
     font-weight: 500;
     font-size: 1.333em;
-    color:hsl(212deg, 0%, 0%);
-    text-decoration: none!important;
+    color: hsl(212deg, 0%, 0%);
+    text-decoration: none !important;
 }
-.mainnav a:hover{
-    text-decoration: underline!important;
+
+.mainnav a:hover {
+    text-decoration: underline !important;
 }
-.masthead{
-    display:grid;
-    grid-template-columns: 1fr1 1fr 1fr;
-    /*
-    display:flex;
-    flex-direction: column; 
-    justify-content: space-evenly;
-*/
+
+.masthead {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.times-logo{
-    max-width: 500px
+
+.times-logo {
+    max-width: 500px;
 }
-.masthead h1{
+
+.masthead h1 {
     font-size: 3.157em;
-    text-shadow: 3px 2px 5px hsl(212deg,98%,16%);
+    text-shadow: 3px 2px 5px hsl(212deg, 98%, 16%);
     grid-column: 2 /span 3;
 }
-.content{
-    display:grid;
+
+.content {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
 }
-.content .story{
-    text-indent: 2em;
-    background-color:hsl(212deg,54%,94%);
-        }
-.story.lead-story{
+
+.content .story {
+    /*    text-indent: 2em;*/
+    background-color: hsl(212deg, 54%, 94%);
+}
+
+.story.lead-story {
     grid-column: 1 / span 2;
 }
-h1.story-title{
-    font-size:2.369em;
+
+h1.story-title {
+    font-size: 2.369em;
 }
-.story img{
+
+.story img {
     float:right;
     padding-bottom: 10px;
 }
-.story p{
-    font-size:0.75em;
+
+.story p {
+/*
+    display: flex;
+    text-align: justify;
+*/
+    font-size: 0.75em;
 }
-.story blockquote{
-    font-weight:500;
+
+.story blockquote {
+    font-weight: 500;
     text-decoration: underline;
     padding: 0 30px;
-/*    padding: 0 10px;*/
-    quotes: "\201C" "\201D";
-    
+    quotes: "\201C""\201D";
+
 }
-.story blockquote::before{
+
+.story blockquote::before {
     content: open-quote;
 }
-.story blockquote::after{
+
+.story blockquote::after {
     content: close-quote;
 }
-.story p.byline{
+
+.story p.byline {
     text-align: right;
 }
-p.byline span.author{
+
+p.byline span.author {
     font-size: 1em;
-    font-weight: 500; 
+    font-weight: 500;
     text-decoration: underline
 }
-p.byline span.pub{
-    font-size:0.75em;
+
+p.byline span.pub {
+    font-size: 0.75em;
     font-weight: 200;
     font-style: italic;
 }
-.foot{
-    display:flex;
-    font-size:0.694em;
+
+.foot {
+    display: flex;
+    font-size: 0.694em;
     justify-content: space-around;
 }
-.foot p{
-    
-}
 
-@media (max-width: 650px) {
-    
-    .container{
-        max-width: 700px;
-    }
-    .story p{
-        font-size: 0.833em; 
-    }
-    .subnav a{  }
-    .mainnav{
-        display:flex;
-        flex-direction: column;
-        align-items:center;
-         
-    }
-    .mainnav a{
-        font-size:1.2em;
-    }
-    .masthead{
-        display:flex;
-        flex-direction: column;
-    }
-    .masthead h1{
-        font-size:2.074em;
-    }
-    .content{
-        margin:auto;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
+.foot p {}
+
+@media (max-width: 750px) {
+    .container {
+        max-width: 750px;
         
     }
-    .story img{
-        display: block;
-        max-width:250px;
-        margin:auto; 
+
+    .story p {
+        font-size: 0.833em;
+    }
+
+    .mainnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainnav a {
+        font-size: 1.2em;
+    }
+
+    .masthead {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .times-logo{
+        max-width: 100%;
+        
+    }
+    .masthead h1 {
+        font-size: 2.074em;
+    }
+
+    .content {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .story img {
+        max-width: 100%;
     }
 }
